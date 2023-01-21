@@ -5,6 +5,7 @@ const basket = document.querySelector('.basket');
 const basketLanguage = document.querySelector('.basket__language');
 const baskenavLanguageChooset = document.querySelector('.nav__language-choose');
 const navchange = document.querySelector('.nav__language');
+const h1 = document.querySelector('.header-title');
 
 
 btn.addEventListener('click', () => {
@@ -14,17 +15,20 @@ btn.addEventListener('click', () => {
 close.addEventListener('click', () => {
     navList.style.transform = "translateX(-110%)"
 })
-basket.addEventListener('click', () => {
-    baskenavLanguageChooset.classList.add('active')
-})
-basketLanguage.addEventListener('click', () => {
-    console.log('salom');
-    baskenavLanguageChooset.classList.remove('active')
+// basket.addEventListener('click', () => {
+//     baskenavLanguageChooset.classList.add('active')
+//     h1.classList.add('active')
 
+// })
+window.addEventListener('click', () => {
+    
 })
-window.addEventListener('click', (e) => {
-    console.log(e.target);
-})
+
+
+
+
+
+
 // baskenavLanguageChooset.addEventListener('click', () => {
 //     console.log('salom');
 //     baskenavLanguageChooset.classList.add('isactive')
